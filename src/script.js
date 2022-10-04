@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () =>{
     let plus = document.querySelector('.plus');
     let minus = document.querySelector('.minus');
     let equals = document.querySelector('.equals');
-    let dot = document.querySelector('.dot')
 
     let actionDesc = '';
 
@@ -63,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             key.addEventListener('click', () => {
             if(input.value == '' && key.innerHTML == 0){
                     input.value = '';
-            } else if (input.value.length <= 47) {
+            } else if (input.value.length <= 35) {
                 input.value += key.innerHTML;
             }
             
